@@ -1,0 +1,10 @@
+/* Main CSS used to overwrite bootstrap styles for all pages.*/
+/*
+Link to your page by pasting this code in the HEAD tag, below
+the bootstrap style link:
+
+<link rel="stylesheet" type="text/css" href="deptstyle.css">
+
+*/
+
+h1 {color: purple;}
