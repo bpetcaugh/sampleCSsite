@@ -1,0 +1,84 @@
+<html>
+<!-- engineering.html = This page will have CARDS displaying what engineering classes we currently teach at HGP, -->
+<!-- as well as a picture of the Innovation Lab, and description of the class. 
+It should also have a form that would let you change the description if you wanted to update it (as a teacher). -->
+
+<!-- Metadata -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="description" content="Holy Ghost Prep Announcement Page">
+<link rel="shortcut icon" href="favicon.ico">
+
+
+<title>EHGP Announcements</title>
+
+<!-- JQuery and AJAX -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!-- Our Custom JS -->
+<script src="textSearcher.js" charset="utf-8"></script>
+<script src="main_functions.js" charset="utf-8"></script>
+<!-- Bootstrap CSS CDN -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<!-- JS to set body HEX color as a cookie -->
+<script>
+    function rgb2hex(rgb){
+     rgb = rgb.match(/^rgba?[\s+]?\([\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?/i);
+     return (rgb && rgb.length === 4) ? "#" +
+      ("0" + parseInt(rgb[1],10).toString(16)).slice(-2) +
+      ("0" + parseInt(rgb[2],10).toString(16)).slice(-2) +
+      ("0" + parseInt(rgb[3],10).toString(16)).slice(-2) : '';
+    }
+
+    $(document).ready(function(){
+        let color = $("body").css("background-color");
+        document.getElementById("settings-bg-color").value = rgb2hex(color);
+        var domain = window.location.host.split(/\.(.+)/)[1];
+        document.cookie = "css=" + rgb2hex(color) + "; path=/; domain=" + domain;
+    });
+</script>
+<link rel="stylesheet" href="themes/main.css">
+<link rel="stylesheet" href="themes/style.css" type="text/css">
+</head>
+
+<style>
+body {background-color:darkblue}
+</style>
+
+<body>
+<!-- Navbar -->
+
+    <div class="scroll-line"></div>
+</div>
+<!-- Logo Header -->
+<div class="mx-auto" style="width: 100%; ">
+    <div class="header-top" style="display: flex; justify-content: center;">
+        <img src="https://vignette.wikia.nocookie.net/youtube/images/2/2d/Carson.jpeg/revision/latest?cb=20190409081528" alt="HGP Logo" class="center">
+    </div>
+    <br>
+</div>
+<!-- This is where the announcements page starts -->
+    <div class="mx-auto" id="canv-container" style="width: 90%;">
+    <div class="alert-header"></div></div>                
+    
+    <div class='card-container'>
+          <div class='card'><h5 class='card-header'>Engineering
+           <alt='drag' class='drag float-right'></h5>
+           <div class='card-body'>
+               <p class='card-title'>
+                   Filled with weapons of mass destruction, this class
+                   teaches your son how to be a marine.</p>
+                <p class='card-text'>         
+                <p>Did you know that Knack II causes prostate cancer? Yeah!</p>        
+            </div>
+            </div>
+        <br><div class='text-center'> <form action='didcarsonkill.me' style='display:inline-block'><input style='display:inline-block' type='submit' class='btn btn-primary announcements-btns' value='Did Carson take her back?'></form>
+
+</body>
+</html>
