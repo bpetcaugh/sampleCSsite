@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0052)https://getbootstrap.com/docs/4.0/examples/carousel/ -->
+<!-- Done by Matt Stauffer -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -7,15 +7,27 @@
     <meta name="author" content="">
     <link rel="icon" href="https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico">
 
-    <title>Carousel Template for Bootstrap</title>
+    <title>HGP Robotics</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
-
-    <!-- Bootstrap core CSS -->
-    <link href="./Carousel Theme_files/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <!--Custom Style here-->
+    <style>
+      .carousel-inner > .item > img { width:100%; height:40%; }
+      .rotateimg180 {
+  -webkit-transform:rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.rotateimg90 {
+  -webkit-transform:rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);}
+    </style>
   </head>
   <body>
 
@@ -28,7 +40,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="https://getbootstrap.com/docs/4.0/examples/carousel/#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="www.holyghostprep.org">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://getbootstrap.com/docs/4.0/examples/carousel/#">Link</a>
@@ -54,18 +66,18 @@
           <li data-target="#myCarousel" data-slide-to="2" class=""></li>
         </ol>
         <div class="carousel-inner">
-          <div class="carousel-item">
-            <img class="first-slide" src="https://i.pinimg.com/originals/22/a6/f8/22a6f8924746f1bfc58b531689a6add9.png" alt="First slide">
+          <div class="carousel-item active w-100">
+            <img class="first-slide rotateimg90" src="https://files.slack.com/files-pri/TAGAHF98A-FLWH8MPGE/20190727_205924.jpg" alt="First slide" margin=auto width=100%>
             <div class="container">
               <div class="carousel-caption text-left">
                 <h1>Example headline.</h1>
                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="https://getbootstrap.com/docs/4.0/examples/carousel/#" role="button">Sign up today</a></p>
+                <p><a class="btn btn-lg btn-primary" href="" role="button">Sign up today</a></p>
               </div>
             </div>
           </div>
-          <div class="carousel-item active">
-            <img class="second-slide" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f0c952de-e4e2-4139-a631-70d37191d3c3/d1r6zj3-46b97f3d-684a-4b6a-9f2e-1347741e06c3.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2YwYzk1MmRlLWU0ZTItNDEzOS1hNjMxLTcwZDM3MTkxZDNjM1wvZDFyNnpqMy00NmI5N2YzZC02ODRhLTRiNmEtOWYyZS0xMzQ3NzQxZTA2YzMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.-QD9HaVvcJoyL_a9qIr2zvtn9Cbk8Z5Van4wvSR1_sk" alt="Second slide">
+          <div class="carousel-item">
+            <img class="second-slide rotateimg90" src="https://files.slack.com/files-pri/TAGAHF98A-FN496A5FG/image_from_ios.jpg" alt="Second slide" margin=auto>
             <div class="container">
               <div class="carousel-caption">
                 <h1>Another example headline.</h1>
@@ -75,7 +87,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img class="third-slide" src="https://t00.deviantart.net/gMAQzJwJlS2QGMtZZuyvGUbQtjA=/500x250/filters:fixed_height(100,100):origin()/pre00/dc81/th/pre/i/2015/125/2/8/wall_e___robot_love_by_catussnake-d1nwmlo.jpg" alt="Third slide">
+            <img class="third-slide rotateimg90" src="https://files.slack.com/files-pri/TAGAHF98A-FLTUFC35J/20190727_193305.jpg" alt="Third slide">
             <div class="container">
               <div class="carousel-caption text-right">
                 <h1>One more for good measure.</h1>
