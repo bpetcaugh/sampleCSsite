@@ -35,6 +35,10 @@
         <li class="nav-item">
             <a class="nav-link disabled" href="#">Teams</a>
         </li>
+        <li class="nav-item">
+          //must fix button later
+            <button class="btn btn-danger ml-auto">Login</button>
+        </li>
       </ul>
       
     </div>
