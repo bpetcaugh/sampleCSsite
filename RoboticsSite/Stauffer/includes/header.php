@@ -1,4 +1,4 @@
-<?php echo'<meta charset="utf-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="242 Firebirds website">
 <meta name="author" content="Brandon Petcaugh, 242 team">
@@ -27,4 +27,4 @@
 	}
 </style>
 <!-- Custom styles for this template -->
-<link href="242styles.css" rel="stylesheet">'?>
+<link href="242styles.css" rel="stylesheet">
