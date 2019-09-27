@@ -81,6 +81,8 @@
   <?php 
     //Test Connection to DB
     include("./includes/connectdb.php"); 
+    include("./includes/header.php");
+    include("./includes/footer.php");
   ?>
 
   </div><!-- /.container -->
