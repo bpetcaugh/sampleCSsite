@@ -1,4 +1,4 @@
-<title><?php print $PAGE_TITLE;?></title>
+<?php echo'<title><?php print $PAGE_TITLE;?></title>
 
 <?php if ($CURRENT_PAGE == "Index") { ?>
 	<meta name="description" content="" />
@@ -14,4 +14,4 @@
 		font-size: 14px;
 		text-align: center;
 	}
-</style>
+</style>'?>
