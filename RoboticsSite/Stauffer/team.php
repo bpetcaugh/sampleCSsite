@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <?php include("./includes/header.php")?>
+    <?php include("./includes/header.php");
+    include("./includes/config.php")?>
   </head>
   <body>
     <header>
